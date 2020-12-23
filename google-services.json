@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "885360611337",
+    "project_id": "pandemicdiary-eb3d3",
+    "storage_bucket": "pandemicdiary-eb3d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885360611337:android:7d149639d222d6796928d8",
+        "android_client_info": {
+          "package_name": "com.pandemic.diary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885360611337-9j574csc3c38a52hu18gh79j7vb8aflh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pandemic.diary",
+            "certificate_hash": "c60a1433656bdcd04a4b480dd839815b111295bc"
+          }
+        },
+        {
+          "client_id": "885360611337-hdm0bggjm0490ms27csqvhkjevgfvtem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFpYLd3lAHCHdr_ny_tIv2v3WDq3q7Pik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885360611337-hdm0bggjm0490ms27csqvhkjevgfvtem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

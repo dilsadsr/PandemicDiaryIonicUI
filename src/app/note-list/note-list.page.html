@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger" style="text-align: center">
+    <ion-row>
+      <ion-col>
+        <ion-title> Pandemic Diary Notes</ion-title>
+      </ion-col>
+      <ion-col style="text-align: right; padding-right: 30px; font-size: large">
+        <ion-icon name="arrow-back-outline" (click)="backToHome()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-grid *ngFor="let d of data">
+      <ion-row>
+        <ion-col>
+          <ion-icon name="rocket-outline" class="iconStyle"></ion-icon>
+        </ion-col>
+        <ion-col>
+        
+          <ion-card-content>
+            <h2 style="color:white">{{d.personName}}</h2>
+            <p>{{d.note}}</p>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

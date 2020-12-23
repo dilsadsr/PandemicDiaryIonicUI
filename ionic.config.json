@@ -1,5 +1,7 @@
 {
   "name": "pandemic-diary",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

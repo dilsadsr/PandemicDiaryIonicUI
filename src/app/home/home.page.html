@@ -1,20 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="danger" style="text-align: center">
+    <ion-row>
+      <ion-col>
+        <ion-title> Pandemic Diary</ion-title>
+      </ion-col>
+      <ion-col style="text-align: right; padding-right: 30px; font-size: large">
+        <ion-icon name="arrow-forward-outline" (click)="goToNotes()"></ion-icon>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="info">
+    <ion-icon name="rocket-outline" class="logo"></ion-icon>
   </div>
 </ion-content>
+
+<div id="container" style="padding-top: 50px">
+  <ion-grid style="width: 75%; margin-top: 70px">
+    <ion-row class="rowStyle">
+      <ion-icon name="person-outline" color="danger"></ion-icon>
+      <ion-input
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Your name"
+      ></ion-input>
+    </ion-row>
+
+    <ion-row class="rowStyle">
+      <ion-icon name="pencil-outline" color="danger"></ion-icon>
+      <ion-textarea
+        type="text"
+        [(ngModel)]="note"
+        placeholder="Enter any notes here..."
+        rows="10"
+      ></ion-textarea>
+    </ion-row>
+
+    <div style="text-align: center; padding-top: 50px">
+      <ion-button color="danger" (click)="saveNote()">Submit</ion-button>
+    </div>
+  </ion-grid>
+</div>
